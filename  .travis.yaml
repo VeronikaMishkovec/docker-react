@@ -8,8 +8,6 @@ services:
   - docker
 
 before_install:
-  - gem install rake
-  - npm i -g npm@version-number
   - docker build -t vermishka/docker-react -f Dockerfile.dev .
 
 script:
