@@ -1,8 +1,6 @@
 sudo: required
-language: generic
-
 services:
-  - dockerfile
+  - docker
 
 before_install:
   - docker build -t vermishka/docker-react -f Dockerfile.dev .
